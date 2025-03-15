@@ -14,5 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Docker version
+      run: docker --version
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$GITHUB_RUN_NUMBER
