@@ -17,7 +17,7 @@ on:
 jobs:
   build:
 
-    runs-on: Devops-Engine
+    runs-on: self-hosted
 
 
     steps:
